@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sub1Cell" id="gTV-IL-0wX" customClass="Sub1CollectionViewCell" customModule="Prac2CollecView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3t-WR-W7f">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aug-DJ-vyx">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Hxl-aC-ZsI"/>
+                            <constraint firstItem="Aug-DJ-vyx" firstAttribute="top" secondItem="i3t-WR-W7f" secondAttribute="top" id="Qns-id-Pia"/>
+                            <constraint firstAttribute="bottom" secondItem="Aug-DJ-vyx" secondAttribute="bottom" id="gZR-ha-WBg"/>
+                            <constraint firstAttribute="width" secondItem="i3t-WR-W7f" secondAttribute="height" multiplier="1:1" id="iTD-Rq-48F"/>
+                            <constraint firstItem="Aug-DJ-vyx" firstAttribute="leading" secondItem="i3t-WR-W7f" secondAttribute="leading" id="lu8-YT-lsk"/>
+                            <constraint firstAttribute="trailing" secondItem="Aug-DJ-vyx" secondAttribute="trailing" id="mo9-bC-Fby"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="i3t-WR-W7f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="62G-lW-RQc"/>
+                <constraint firstAttribute="trailing" secondItem="i3t-WR-W7f" secondAttribute="trailing" id="Y5j-zT-cuA"/>
+                <constraint firstAttribute="bottom" secondItem="i3t-WR-W7f" secondAttribute="bottom" id="YMd-XM-Yg7"/>
+                <constraint firstItem="i3t-WR-W7f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cka-ge-dBQ"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="i3t-WR-W7f" id="98r-5Q-OYd"/>
+                <outlet property="imgView" destination="Aug-DJ-vyx" id="23I-Sr-4Bp"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="81"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
