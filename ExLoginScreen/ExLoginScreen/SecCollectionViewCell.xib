@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collecCell" id="gTV-IL-0wX" customClass="SecCollectionViewCell" customModule="ExLoginScreen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="153"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emN-Tx-WIg">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="153"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZVh-Se-ZRw">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="sC2-l1-wOH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZVh-Se-ZRw" secondAttribute="bottom" id="59A-8C-22A"/>
+                            <constraint firstItem="ZVh-Se-ZRw" firstAttribute="leading" secondItem="emN-Tx-WIg" secondAttribute="leading" id="OI0-E1-XYP"/>
+                            <constraint firstAttribute="trailing" secondItem="ZVh-Se-ZRw" secondAttribute="trailing" id="ewl-Bz-YdF"/>
+                            <constraint firstItem="ZVh-Se-ZRw" firstAttribute="top" secondItem="emN-Tx-WIg" secondAttribute="top" id="lXc-Uj-7cB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="emN-Tx-WIg" secondAttribute="bottom" id="K7e-yw-1V2"/>
+                <constraint firstItem="emN-Tx-WIg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eYC-95-mjX"/>
+                <constraint firstAttribute="trailing" secondItem="emN-Tx-WIg" secondAttribute="trailing" id="jut-Xd-gJ3"/>
+                <constraint firstItem="emN-Tx-WIg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mia-vu-VCo"/>
+            </constraints>
+            <connections>
+                <outlet property="imgPoster" destination="ZVh-Se-ZRw" id="eno-Eu-NDV"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="61.607142857142854"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
